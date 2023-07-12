@@ -240,6 +240,20 @@ section.banner {
   position: relative;
   background-position: bottom;
 }
+section.banner .img_cap img {
+  z-index: 1;
+}
+section.banner .img_cap svg {
+  position: absolute;
+  top: -10%;
+  left: -13%;
+  z-index: 0;
+}
+section.banner .img_cap svg path {
+  stroke-dasharray: 10 5;
+  stroke-dashoffset: 500;
+  animation: dash 5s linear infinite;
+}
 @media screen and (max-width: 1360px) {
   section.banner {
     padding-top: 160px;
@@ -314,7 +328,7 @@ section.banner {
 }
 @media screen and (max-width: 991px) and (max-width: 400px) {
   section.banner .col_right_banner {
-    padding-top: 65%;
+    padding-top: 80%;
   }
 }
 @media screen and (max-width: 767px) {

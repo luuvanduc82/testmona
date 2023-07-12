@@ -239,6 +239,22 @@ section.banner {
     background-size: cover;
     position: relative;
     background-position: bottom;
+    .img_cap {
+        img {
+            z-index: 1;
+        }
+        svg {
+            position: absolute;
+            top: -10%;
+            left: -13%;
+            z-index: 0;
+            path {
+                stroke-dasharray: 10 5;
+                stroke-dashoffset: 500;
+                animation: dash 5s linear infinite;
+            }
+        }
+    }
     @media screen and (max-width: 1360px) {
         .box_green {
             right: 0;
@@ -293,7 +309,7 @@ section.banner {
                 padding-top: 40%;
             }
             @media screen and (max-width:400px) {
-                padding-top: 65%;
+                padding-top: 80%;
             }
         }
         background: none;
