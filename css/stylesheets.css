@@ -119,6 +119,11 @@ header nav.navbar ul div {
   justify-content: space-around;
   flex: 1;
 }
+@media screen and (max-width: 991px) {
+  header nav.navbar {
+    height: 7rem;
+  }
+}
 header nav.navbar ul li a {
   font-size: 1.6rem;
   color: var(--text-white);
@@ -177,6 +182,9 @@ header div#logo img {
     width: auto;
     margin-top: 10px;
   }
+  header .men_primary div .language .active {
+    color: #fff;
+  }
   header .men_primary div .language a {
     display: flex;
     padding: 5px 10px;
@@ -227,38 +235,18 @@ header .overlay {
 }
 
 section.banner {
-  background: url(../img/Vector\ \(1\).png) no-repeat;
-  background-position: bottom 139px right;
-  background-size: 66%;
+  background: url(../img/Frame\ 36795.png) no-repeat;
+  background-size: cover;
   position: relative;
+  background-position: bottom;
 }
 @media screen and (max-width: 1360px) {
   section.banner {
-    background-size: 72%;
     padding-top: 160px;
   }
-}
-section.banner .col_right_banner {
-  padding-top: 60px;
-}
-section.banner .col_right_banner::before {
-  content: "";
-  position: absolute;
-  width: 220px;
-  height: 215px;
-  background: url(../img/chandelier\ with\ green\ round\ lampshade.png) no-repeat;
-  background-position: center;
-  background-size: contain;
-  right: -22%;
-  top: -26%;
-  z-index: 1;
-}
-@media screen and (max-width: 1740px) {
-  section.banner .col_right_banner::before {
-    right: -7%;
-    top: -29%;
-    width: 170px;
-    height: 330px;
+  section.banner .box_green {
+    right: 0;
+    top: 25%;
   }
 }
 @media screen and (max-width: 991px) {
@@ -289,11 +277,44 @@ section.banner .col_right_banner::before {
     top: 15%;
     left: -90px;
   }
+}
+@media screen and (max-width: 991px) and (max-width: 767px) {
+  section.banner .box_red {
+    left: 0;
+    top: 5%;
+  }
+}
+@media screen and (max-width: 991px) and (max-width: 560px) {
+  section.banner .box_red {
+    width: 230px;
+  }
+}
+@media screen and (max-width: 991px) {
   section.banner .box_right_content h2 {
     font-size: 30px;
   }
   section.banner .col_right_banner {
     display: flex;
+  }
+}
+@media screen and (max-width: 991px) and (max-width: 767px) {
+  section.banner .col_right_banner {
+    padding-top: 0px;
+  }
+}
+@media screen and (max-width: 991px) and (max-width: 560px) {
+  section.banner .col_right_banner {
+    padding-top: 60px;
+  }
+}
+@media screen and (max-width: 991px) and (max-width: 460px) {
+  section.banner .col_right_banner {
+    padding-top: 40%;
+  }
+}
+@media screen and (max-width: 991px) and (max-width: 400px) {
+  section.banner .col_right_banner {
+    padding-top: 65%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -321,15 +342,8 @@ section.banner .col_right_banner::before {
   }
   section.banner .box_blue {
     left: 0;
-    width: 60%;
-    bottom: 30%;
-  }
-  section.banner .box_red {
-    left: 0;
-    top: 5%;
-  }
-  section.banner .col_right_banner {
-    padding-top: 260px;
+    width: 40%;
+    bottom: 45%;
   }
   section.banner .box_right_content h2 {
     font-size: 2.4rem;
@@ -340,6 +354,22 @@ section.banner .col_right_banner::before {
   section.banner .col_left_banner::before {
     left: 0;
   }
+}
+@media screen and (max-width: 500px) {
+  section.banner .box_blue {
+    width: 60%;
+    bottom: 27%;
+  }
+}
+section.banner .svgtest {
+  position: absolute;
+  right: 0;
+  top: -90px;
+}
+section.banner .svgtest svg path {
+  stroke-dasharray: 10 5;
+  stroke-dashoffset: 500;
+  animation: dash 5s linear infinite;
 }
 
 section.course {
@@ -405,6 +435,8 @@ section.course .tab_item.active {
   background: #fff;
 }
 section.course .img_book {
+  animation: updow 10s ease-in-out infinite;
+  -webkit-animation: updow 10s ease-in-out infinite;
   position: absolute;
   width: auto;
   right: 0;
@@ -487,6 +519,11 @@ section.course .course_img_wave img {
   }
 }
 
+@media screen and (max-width: 1300px) {
+  .intro {
+    margin-top: -0.1rem;
+  }
+}
 .intro .intro_content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -496,7 +533,7 @@ section.course .course_img_wave img {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 540px) {
   .intro .intro_content {
     grid-template-columns: 1fr;
     padding: 0 15px;
@@ -509,6 +546,11 @@ section.course .course_img_wave img {
   }
 }
 
+@media screen and (max-width: 991px) {
+  .blogs {
+    margin-top: -0.1rem;
+  }
+}
 .blogs .blogs_content {
   position: relative;
 }
@@ -542,6 +584,11 @@ section.course .course_img_wave img {
   padding-top: 80px !important;
   padding-bottom: 170px !important;
 }
+@media screen and (max-width: 1360px) {
+  .gallery {
+    margin-top: -0.1rem;
+  }
+}
 .gallery .container {
   z-index: 1;
 }
@@ -550,7 +597,7 @@ section.course .course_img_wave img {
   content: "";
   position: absolute;
   left: 0;
-  top: 12px;
+  top: 1.2rem;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -570,7 +617,8 @@ section.course .course_img_wave img {
   width: 150px;
   height: 150px;
   background-size: contain;
-  animation: moveDiv 3s 3;
+  animation: updow 10s ease-in-out infinite;
+  -webkit-animation: updow 10s ease-in-out infinite;
 }
 @media screen and (max-width: 1200px) {
   .gallery::after {
@@ -595,6 +643,8 @@ section.course .course_img_wave img {
   left: -230px;
   bottom: 100px;
   width: auto;
+  animation: updow 10s ease-in-out infinite;
+  -webkit-animation: updow 10s ease-in-out infinite;
 }
 @media screen and (max-width: 1200px) {
   .gallery .cloud_galle {
@@ -602,6 +652,8 @@ section.course .course_img_wave img {
   }
 }
 .gallery .cloud_galle1 {
+  animation: updow 10s ease-in-out infinite;
+  -webkit-animation: updow 10s ease-in-out infinite;
   position: absolute;
   left: 102px;
   bottom: -70px;
@@ -618,6 +670,8 @@ section.course .course_img_wave img {
   }
 }
 .gallery .cloud_galle2 {
+  animation: updow 10s ease-in-out infinite;
+  -webkit-animation: updow 10s ease-in-out infinite;
   position: absolute;
   right: -180px;
   bottom: 100px;
@@ -629,6 +683,8 @@ section.course .course_img_wave img {
   }
 }
 .gallery .cloud_galle3 {
+  animation: updow 10s ease-in-out infinite;
+  -webkit-animation: updow 10s ease-in-out infinite;
   position: absolute;
   right: -115px;
   bottom: 0;
@@ -658,7 +714,7 @@ section.course .course_img_wave img {
   border-radius: 50%;
   width: 120%;
   height: 120%;
-  border: 1px dashed white;
+  border: 1px dashed #fff;
   animation: zoom 1s infinite;
   transition: all 0.5s linear;
 }
@@ -710,6 +766,11 @@ section.course .course_img_wave img {
   }
 }
 
+@media screen and (max-width: 991px) {
+  .reviews {
+    margin-top: -0.1rem;
+  }
+}
 .reviews .reviews_slide .swiper-pagination {
   bottom: -30px;
 }
@@ -718,32 +779,43 @@ section.course .course_img_wave img {
 }
 @media screen and (max-width: 991px) {
   .reviews {
-    padding-bottom: 5rem;
+    padding-bottom: 8rem !important;
   }
   .reviews .reviews_header .text_center.mb_20 {
     margin-bottom: 3rem;
   }
   .reviews .reviews_content {
-    padding: 0 15px;
+    padding: 0 1.5rem;
   }
 }
 @media screen and (max-width: 767px) {
+  .reviews {
+    padding-bottom: 3rem !important;
+  }
   .reviews .reviews_content {
-    padding: 0 15px;
-    padding-bottom: 40px;
+    padding: 0 1.5rem;
+    padding-bottom: 4rem;
     overflow: hidden;
   }
   .reviews .reviews_slide .swiper-pagination {
     bottom: 0;
   }
   .reviews .reviews_slide {
-    padding-bottom: 40px;
+    padding-bottom: 4rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .reviews {
+    padding-bottom: 1rem !important;
   }
 }
 
+footer {
+  padding-top: 100px !important;
+}
 footer .footer_item ul {
   display: flex;
-  column-gap: 25px;
+  column-gap: 2.5rem;
 }
 @media screen and (max-width: 1200px) {
   footer .footer_item ul {
@@ -766,30 +838,100 @@ footer .footer_item ul {
     order: 1;
   }
   footer .footer_item h3 {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
   footer .footer_item_center {
     order: 2;
+  }
+}
+footer .img_cloud_form {
+  position: absolute;
+  left: 0%;
+  top: 0;
+  animation: updow 10s ease-in-out infinite;
+  -webkit-animation: updow 10s ease-in-out infinite;
+}
+@media screen and (max-width: 991px) {
+  footer .img_cloud_form {
+    top: -6rem;
+    width: 60%;
+  }
+}
+footer .img_cloud_form2 {
+  position: absolute;
+  right: 0%;
+  width: 50%;
+  top: 0;
+  animation: updow 10s ease-in-out infinite;
+  -webkit-animation: updow 10s ease-in-out infinite;
+}
+@media screen and (max-width: 991px) {
+  footer .img_cloud_form2 {
+    top: -6.6rem;
   }
 }
 footer .footer_form {
   position: relative;
   display: flex;
   width: 761px;
-  padding: 50px 50px 100px;
+  padding: 5rem 5rem 10rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 2rem;
   margin: auto;
   border-radius: 12px;
   background: linear-gradient(180deg, #BFE8FF 0%, #D9F0FD 100%);
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
+footer .footer_form::before {
+  content: "";
+  position: absolute;
+  left: -145px;
+  top: 50%;
+  background: url(../img/76059491\ 3.png) center no-repeat;
+  background-size: contain;
+  width: 170px;
+  height: 140px;
+  z-index: 3;
+  animation: updow 10s ease-in-out infinite;
+  -webkit-animation: updow 10s ease-in-out infinite;
+}
+@media screen and (max-width: 991px) {
+  footer .footer_form::before {
+    width: 20%;
+    height: 100px;
+    left: 0;
+    bottom: 0;
+    top: unset;
+  }
+}
+footer .footer_form::after {
+  content: "";
+  position: absolute;
+  right: -70px;
+  top: 50%;
+  z-index: 3;
+  width: 100px;
+  height: 100px;
+  background: url(../img/76059441\ 1.png) center no-repeat;
+  background-size: contain;
+  animation: updow 10s ease-in-out infinite;
+  -webkit-animation: updow 10s ease-in-out infinite;
+}
+@media screen and (max-width: 991px) {
+  footer .footer_form::after {
+    width: 20%;
+    height: 80px;
+    right: 0;
+    bottom: 0;
+    top: unset;
+  }
+}
 @media screen and (max-width: 991px) {
   footer .footer_form {
     width: 100%;
-    padding: 20px;
+    padding: 2rem;
   }
 }
 @media screen and (max-width: 991px) {
@@ -803,13 +945,13 @@ footer .footer_bot {
 }
 @media screen and (max-width: 1200px) {
   footer .footer_bot {
-    padding: 0 15px;
+    padding: 0 1.5rem;
   }
 }
 @media screen and (max-width: 991px) {
   footer .footer_bot {
     grid-template-columns: 1fr;
-    margin-top: 20px;
+    margin-top: 2rem;
   }
 }
 @media screen and (max-width: 991px) {

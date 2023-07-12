@@ -314,6 +314,12 @@ img {
     }
 }
 
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
 @keyframes swing {
     20% {
         transform: rotate3d(0, 0, 1, 15deg);
@@ -351,6 +357,18 @@ img {
     60%,
     80% {
         transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+}
+
+@keyframes updow {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
     }
 }
 
