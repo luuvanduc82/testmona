@@ -1,3 +1,18 @@
+import swiper from "./modules/swiper/swiper-bundle.min";
+import fancybox from "./modules/fancybox/fancybox.umd";
+import AosModule from "./modules/aos/Animated";
+import AosModulejs from "./modules/aos/AosModule";
+import Aosjs from "./modules/aos/aos";
+
+
+window.addEventListener("DOMContentLoaded", () => {
+    swiper();
+    fancybox();
+    AosModule();
+    AosModulejs();
+    Aosjs();
+});
+
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
