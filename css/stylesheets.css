@@ -794,7 +794,7 @@ footer .footer_form {
 }
 @media screen and (max-width: 991px) {
   footer .footer_form select {
-    min-height: 3.7rem;
+    height: 3.7rem;
   }
 }
 footer .footer_bot {
