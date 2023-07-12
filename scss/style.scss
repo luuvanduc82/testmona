@@ -759,6 +759,11 @@ footer {
             width: 100%;
             padding: 20px;
         }
+        select {
+            @media screen and (max-width: 991px) {
+                min-height: 3.7rem;
+            }
+        }
     }
     .footer_bot {
         display: grid;
@@ -803,6 +808,9 @@ footer {
                 top: 0;
                 width: 1px;
                 background: #fff;
+                @media screen and (max-width: 991px) {
+                    right: -8px;
+                }
             }
             &:last-child {
                 &::after {

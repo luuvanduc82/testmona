@@ -792,6 +792,11 @@ footer .footer_form {
     padding: 20px;
   }
 }
+@media screen and (max-width: 991px) {
+  footer .footer_form select {
+    min-height: 3.7rem;
+  }
+}
 footer .footer_bot {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -839,6 +844,11 @@ footer .footer_location li::after {
   top: 0;
   width: 1px;
   background: #fff;
+}
+@media screen and (max-width: 991px) {
+  footer .footer_location li::after {
+    right: -8px;
+  }
 }
 footer .footer_location li:last-child::after {
   content: none;
