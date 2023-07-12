@@ -533,7 +533,7 @@ section.course .course_img_wave img {
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1360px) {
   .intro {
     margin-top: -0.1rem;
   }
@@ -560,7 +560,7 @@ section.course .course_img_wave img {
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1360px) {
   .blogs {
     margin-top: -0.1rem;
   }
@@ -780,7 +780,7 @@ section.course .course_img_wave img {
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1360px) {
   .reviews {
     margin-top: -0.1rem;
   }

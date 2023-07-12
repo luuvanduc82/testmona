@@ -870,7 +870,7 @@
         content: "";
         position: absolute;
         width: 100%;
-        height: 100%;
+        height: -webkit-fill-available;
         background: url(../img/Subtract.png) top no-repeat;
         background-size: cover;
         z-index: 2;
