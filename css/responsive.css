@@ -1,0 +1,19 @@
+@media screen and (max-width: 991px) {
+    .container {
+        padding: 0 15px;
+    }
+    span.icon_bar {
+        width: 25px;
+        height: 2px;
+        background: black;
+        display: block;
+        margin-bottom: 5px;
+    }
+    div#logo {
+        width: 100px;
+        height: 100px;
+    }
+    nav.navbar {
+        align-items: center;
+    }
+}
